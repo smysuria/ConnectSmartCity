@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body >
+    <div style="color: black;
+    background-color: #37c7ad;
+    text-align: center;
+    font-size: 46px;">
+Connect SmartCity
+Burnaby
+</div>
+    <div id="webchat" role="main"
+    style= "overflow: overlay;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: calc(100% - 62px);"></div>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <script>
+      window.WebChat.renderWebChat({
+        directLine: window.WebChat.createDirectLine({ token: 'YZBybkUsklk.N9b8Ge8eIINXsZT_a9IuGae2qAaBZhK5bKxRMO7B0vA' }),
+        userID: 'YOUR_USER_ID',
+        username: 'Web Chat User',
+        locale: 'en-US',
+        botAvatarInitials: 'City',
+        userAvatarInitials: 'BCS'
+      }, document.getElementById('webchat'));
+    </script>
+    <script>window.setInterval(function() {
+  var elem = document.getElementById('data');
+  elem.scrollBot = elem.scrollHeight;
+}, 5000);
+</script>
+<div id="data"></div>
+
+  </body>
+</html>
+<!-- YZBybkUsklk.N9b8Ge8eIINXsZT_a9IuGae2qAaBZhK5bKxRMO7B0vA
+Ru6YP7owtck.eSw9btF2Q-QMIlNX-r4_f-QTWmZ-nwgCHxAbUEUy8zA -->
+
